@@ -11,7 +11,9 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
+import com.jetpackcomposefullcourse.core_components.PartialSelectableText
 import com.jetpackcomposefullcourse.core_components.SimpleOutlineTextField
+import com.jetpackcomposefullcourse.core_components.TextFieldWihPassword
 import com.jetpackcomposefullcourse.fundamentals.AccessStringResource
 import com.jetpackcomposefullcourse.fundamentals.Greeting
 import com.jetpackcomposefullcourse.ui.theme.JetpackComposeFullCourseTheme
@@ -24,8 +26,11 @@ class MainActivity : ComponentActivity() {
             JetpackComposeFullCourseTheme {
 //                Greeting()
 //                AccessStringResource()
-                SimpleOutlineTextField()
+//                SimpleOutlineTextField()
+//                TextFieldWihPassword()
+                PartialSelectableText()
             }
+
         }
     }
 }
