@@ -11,6 +11,7 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
+import com.jetpackcomposefullcourse.core_components.AnnotatedStringWithListenerSample
 import com.jetpackcomposefullcourse.core_components.PartialSelectableText
 import com.jetpackcomposefullcourse.core_components.SimpleOutlineTextField
 import com.jetpackcomposefullcourse.core_components.TextFieldWihPassword
@@ -28,7 +29,8 @@ class MainActivity : ComponentActivity() {
 //                AccessStringResource()
 //                SimpleOutlineTextField()
 //                TextFieldWihPassword()
-                PartialSelectableText()
+//                PartialSelectableText()
+                AnnotatedStringWithListenerSample()
             }
 
         }
