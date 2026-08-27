@@ -4,6 +4,8 @@ import android.widget.Toast
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.material3.Button
+import androidx.compose.material3.ElevatedButton
+import androidx.compose.material3.FilledTonalButton
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
@@ -27,5 +29,25 @@ fun FilledButtonSample() {
             Text("Next")
         }
     }
+}
+
+// Tonal Button
+
+@Composable
+fun FilledTonalButton() {
+    val context = LocalContext.current
+
+    Box(
+        modifier = Modifier.fillMaxSize(),
+        contentAlignment = Alignment.Center
+    ) {
+        FilledTonalButton(onClick = {
+            Toast.makeText(context, "Tonal Button Clicked", Toast.LENGTH_SHORT).show()
+
+        }) {
+            Text("Tonal Button")
+        }
+    }
+
 }
 

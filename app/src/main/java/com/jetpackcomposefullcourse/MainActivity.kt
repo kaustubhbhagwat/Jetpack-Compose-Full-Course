@@ -5,6 +5,7 @@ import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
 import com.jetpackcomposefullcourse.core_components.FilledButtonSample
+import com.jetpackcomposefullcourse.core_components.FilledTonalButton
 import com.jetpackcomposefullcourse.ui.theme.JetpackComposeFullCourseTheme
 
 class MainActivity : ComponentActivity() {
@@ -19,7 +20,8 @@ class MainActivity : ComponentActivity() {
 //                TextFieldWihPassword()
 //                PartialSelectableText()
 //                AnnotatedStringWithListenerSample()
-                FilledButtonSample()
+//                FilledButtonSample()
+                FilledTonalButton()
             }
 
         }
