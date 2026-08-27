@@ -4,6 +4,7 @@ import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
+import com.jetpackcomposefullcourse.core_components.ElevatedButtonSample
 import com.jetpackcomposefullcourse.core_components.FilledButtonSample
 import com.jetpackcomposefullcourse.core_components.FilledTonalButton
 import com.jetpackcomposefullcourse.core_components.OutlinedButtonSample
@@ -23,7 +24,8 @@ class MainActivity : ComponentActivity() {
 //                AnnotatedStringWithListenerSample()
 //                FilledButtonSample()
 //                FilledTonalButton()
-                OutlinedButtonSample()
+//                OutlinedButtonSample()
+                ElevatedButtonSample()
             }
         }
     }

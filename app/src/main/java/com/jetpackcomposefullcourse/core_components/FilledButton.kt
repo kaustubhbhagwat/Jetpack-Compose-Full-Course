@@ -69,4 +69,20 @@ fun OutlinedButtonSample() {
     }
 }
 
+@Composable
+fun ElevatedButtonSample(){
+    val context = LocalContext.current
+
+    Box(
+        modifier = Modifier.fillMaxSize(),
+        contentAlignment = Alignment.Center
+    ) {
+        ElevatedButton(onClick = {
+            Toast.makeText(context, "Outlined Button Clicked", Toast.LENGTH_SHORT).show()
+        }) {
+            Text("Elevated Button")
+        }
+    }
+}
+
 
