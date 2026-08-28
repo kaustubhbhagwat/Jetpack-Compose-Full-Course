@@ -9,6 +9,7 @@ import com.jetpackcomposefullcourse.core_components.FilledButtonSample
 import com.jetpackcomposefullcourse.core_components.FilledTonalButton
 import com.jetpackcomposefullcourse.core_components.ImageSample
 import com.jetpackcomposefullcourse.core_components.OutlinedButtonSample
+import com.jetpackcomposefullcourse.layout_composables.ColumnExample
 import com.jetpackcomposefullcourse.ui.theme.JetpackComposeFullCourseTheme
 
 class MainActivity : ComponentActivity() {
@@ -27,7 +28,8 @@ class MainActivity : ComponentActivity() {
 //                FilledTonalButton()
 //                OutlinedButtonSample()
 //                ElevatedButtonSample()
-                ImageSample()
+//                ImageSample()
+                ColumnExample()
             }
         }
     }
