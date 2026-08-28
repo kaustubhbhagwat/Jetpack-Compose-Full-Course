@@ -14,6 +14,8 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Brush
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.graphics.ColorFilter
+import androidx.compose.ui.graphics.ColorMatrix
 import androidx.compose.ui.graphics.Shape
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.res.painterResource
@@ -43,7 +45,10 @@ fun ImageSample() {
             modifier = Modifier
                 .size(350.dp)
                 .border(BorderStroke(borderWidth, rainbowColors)),
-            alignment = Alignment.Center
+            alignment = Alignment.Center,
+            colorFilter = ColorFilter.colorMatrix(ColorMatrix().apply {
+                setToSaturation(0f)
+            })
         )
     }
 }
