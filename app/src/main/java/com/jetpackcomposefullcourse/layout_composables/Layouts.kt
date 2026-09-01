@@ -1,5 +1,6 @@
 package com.jetpackcomposefullcourse.layout_composables
 
+import android.R
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
@@ -9,6 +10,7 @@ import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.layout.width
 import androidx.compose.material3.Button
 import androidx.compose.material3.Text
@@ -73,10 +75,29 @@ fun RowExample() {
     }
 }
 
+@Composable
+fun BoxExample() {
+    Box(
+        modifier = Modifier
+            .size(200.dp)
+            .background(color = Color.Red),
+        contentAlignment = Alignment.Center,
+    ) {
+        Box(
+            modifier = Modifier
+                .size(100.dp)
+                .background(color = Color.Black)
+        ) {
+
+        }
+    }
+}
+
 @Preview(showSystemUi = true)
 @Composable
 fun ColumnExamplePreview() {
 //    ColumnExample()
-    RowExample()
+//    RowExample()
+    BoxExample()
 }
 
