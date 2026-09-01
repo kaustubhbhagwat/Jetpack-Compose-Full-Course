@@ -77,20 +77,23 @@ fun RowExample() {
 
 @Composable
 fun BoxExample() {
-    Box(
-        modifier = Modifier
-            .size(200.dp)
-            .background(color = Color.Red),
-        contentAlignment = Alignment.Center,
-    ) {
+    Box(modifier = Modifier.fillMaxSize(), contentAlignment = Alignment.Center) {
         Box(
             modifier = Modifier
-                .size(100.dp)
-                .background(color = Color.Black)
+                .size(200.dp)
+                .background(color = Color.Red),
+            contentAlignment = Alignment.Center,
         ) {
+            Box(
+                modifier = Modifier
+                    .size(100.dp)
+                    .background(color = Color.Black)
+            ) {
 
+            }
         }
     }
+
 }
 
 @Preview(showSystemUi = true)
