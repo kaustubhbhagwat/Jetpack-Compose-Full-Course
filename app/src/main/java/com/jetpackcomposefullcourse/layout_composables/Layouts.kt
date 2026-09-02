@@ -1,6 +1,5 @@
 package com.jetpackcomposefullcourse.layout_composables
 
-import android.R
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
@@ -8,6 +7,7 @@ import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxSize
+import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
@@ -20,6 +20,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
+import androidx.constraintlayout.compose.ConstraintLayout
 
 // 1. Column , allows you to place its children in a vertical sequence.
 
@@ -93,8 +94,25 @@ fun BoxExample() {
             }
         }
     }
-
 }
+
+// Constraint Layout
+
+@Composable
+fun ConstraintLayoutExample() {
+    Column {
+        ConstraintLayout(
+            modifier = Modifier
+                .fillMaxWidth()
+                .height(200.dp)
+                .background(Color.LightGray)
+        ) {
+            val (text1, text2, text3) = createRefs()
+
+        }
+    }
+}
+
 
 @Preview(showSystemUi = true)
 @Composable
