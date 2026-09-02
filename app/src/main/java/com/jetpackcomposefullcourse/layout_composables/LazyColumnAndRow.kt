@@ -9,6 +9,7 @@ import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.lazy.LazyColumn
+import androidx.compose.foundation.lazy.LazyRow
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
@@ -39,9 +40,30 @@ fun LazyColumnExample() {
         }
     }
 }
+@Composable
+fun LazyRowExample() {
+    Column(
+        modifier = Modifier.fillMaxSize().padding(16.dp),
+        verticalArrangement = Arrangement.Center
+    ) {
+        Text("Lazy Column")
+        LazyRow() {
+            items(100) { index ->
+                Text(
+                    "This is item no $index",
+                    modifier = Modifier
+                        .fillMaxWidth()
+                        .padding(16.dp)
+                        .background(Color.Magenta)
+                )
+            }
+        }
+    }
+}
 
 @Preview(showSystemUi = true)
 @Composable
 fun LazyColumnExamplePreview() {
-    LazyColumnExample()
+//    LazyColumnExample()
+    LazyRowExample()
 }
