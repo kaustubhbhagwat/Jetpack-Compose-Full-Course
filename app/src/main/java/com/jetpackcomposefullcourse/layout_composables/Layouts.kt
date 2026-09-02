@@ -109,6 +109,25 @@ fun ConstraintLayoutExample() {
         ) {
             val (text1, text2, text3) = createRefs()
 
+            Text("Top Left", modifier = Modifier.constrainAs(text1) {
+                end.linkTo(parent.end, margin = 8.dp)
+                start.linkTo(parent.start, margin = 8.dp)
+                top.linkTo(parent.top)
+                bottom.linkTo(parent.bottom, margin = 16.dp)
+            })
+
+            Text("Center Left", modifier = Modifier.constrainAs(text2) {
+                top.linkTo(text1.bottom, margin = 8.dp)
+                end.linkTo(parent.end, margin = 8.dp)
+                start.linkTo(parent.start, margin = 8.dp)
+            })
+
+            Text("Bottom Left", modifier = Modifier.constrainAs(text3) {
+                top.linkTo(text2.bottom, margin = 8.dp)
+                start.linkTo(parent.start, margin = 8.dp)
+                end.linkTo(parent.end, margin = 8.dp)
+            })
+
         }
     }
 }
@@ -119,6 +138,7 @@ fun ConstraintLayoutExample() {
 fun ColumnExamplePreview() {
 //    ColumnExample()
 //    RowExample()
-    BoxExample()
+//    BoxExample()
+    ConstraintLayoutExample()
 }
 
