@@ -5,6 +5,7 @@ import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
 import com.jetpackcomposefullcourse.bottomsheet.PartialBottomSheet
+import com.jetpackcomposefullcourse.cards.ElevatedCardExample
 import com.jetpackcomposefullcourse.core_components.ElevatedButtonSample
 import com.jetpackcomposefullcourse.core_components.FilledButtonSample
 import com.jetpackcomposefullcourse.core_components.FilledTonalButton
@@ -33,7 +34,8 @@ class MainActivity : ComponentActivity() {
 //                ImageSample()
 //                ColumnExample()
 //                ConstraintLayoutExample()
-                PartialBottomSheet()
+//                PartialBottomSheet()
+                ElevatedCardExample()
             }
         }
     }
