@@ -12,6 +12,7 @@ import com.jetpackcomposefullcourse.core_components.FilledButtonSample
 import com.jetpackcomposefullcourse.core_components.FilledTonalButton
 import com.jetpackcomposefullcourse.core_components.ImageSample
 import com.jetpackcomposefullcourse.core_components.OutlinedButtonSample
+import com.jetpackcomposefullcourse.inputChips.InputChipExample
 import com.jetpackcomposefullcourse.layout_composables.ColumnExample
 import com.jetpackcomposefullcourse.layout_composables.ConstraintLayoutExample
 import com.jetpackcomposefullcourse.ui.theme.JetpackComposeFullCourseTheme
@@ -37,7 +38,8 @@ class MainActivity : ComponentActivity() {
 //                ConstraintLayoutExample()
 //                PartialBottomSheet()
 //                ElevatedCardExample()
-                CheckboxExample()
+//                CheckboxExample()
+                InputChipExample()
             }
         }
     }
