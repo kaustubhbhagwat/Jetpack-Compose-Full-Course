@@ -4,6 +4,7 @@ import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
+import com.jetpackcomposefullcourse.alert_dialogs.DialogWithImage
 import com.jetpackcomposefullcourse.bottomsheet.PartialBottomSheet
 import com.jetpackcomposefullcourse.cards.ElevatedCardExample
 import com.jetpackcomposefullcourse.checkbox.CheckboxExample
@@ -39,8 +40,10 @@ class MainActivity : ComponentActivity() {
 //                PartialBottomSheet()
 //                ElevatedCardExample()
 //                CheckboxExample()
-                InputChipExample()
+//                InputChipExample()
+                DialogWithImage()
             }
+
         }
     }
 }
